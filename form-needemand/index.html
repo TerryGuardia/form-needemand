@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXO HTML Formulaire - Connexion Needemand</title>
+    <style>
+        #mail:valid, #mdp:valid {
+            background-color: teal;
+        }
+        #mail:invalid, #mdp:invalid {
+            background-color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <form action="" method="post">
+
+            <label for="mail">Adresse email : </label>
+            <input type="email" name="mail" id="mail" pattern="^([a-z0-9]+)@needemand\.com$" required>
+            <label for="mdp">Mot de passe : </label>
+            <input type="password" name="mdp" id="mdp" pattern="^(?=.*\d).{6,8}$" required>
+            <div>
+                <button type="submit">C'est parti</button>
+                <button type="reset">Recommencer</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
